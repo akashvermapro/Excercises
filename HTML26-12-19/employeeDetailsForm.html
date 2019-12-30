@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Employee details form</title>
+	</head>
+	<body style="background-color:skyblue">
+		<form action="empinfo@capgemini.com" method="post" name="form1">
+			<table>
+				<tr>
+					<td><b>Name</b></td>
+					<td><input type="text" name="name" size="20"></td>
+				</tr>
+				<tr>
+					<td><b>Employee Code</b></td>
+					<td><input type="text" name="code" size="4"></td>
+				</tr>
+				<tr>
+					<td><b>Department</b></td>
+					<td><input type="radio" name="department" value="Admin">Admin <br>
+					<input type="radio" name="department" value="HR">HR <br>
+					<input type="radio" name="department" value="Technical">Technical <br>
+					<input type="radio" name="department" value="Accounts">Accounts</td>
+				</tr>
+				<tr>
+					<td><b>Date of Joining</b></td>
+					<td><input type="date" name="dateofjoining"></td>
+				</tr>
+				<tr>
+					<td><b>Address</b></td>
+					<td><textarea name="address" rows="5" cols="20"></textarea></td>
+				</tr>
+				<tr>
+					<td><b>Training Program Attended</b></td>
+					<td><input type="checkbox" name="program">HTML/DHTML <br>
+					<input type="checkbox" name="program">Java <br>
+					<input type="checkbox" name="program">Client/Server <br>
+					<input type="checkbox" name="program">.Net
+					</td>
+				</tr>
+				<tr>
+					<td><b>Training program need to attend</b></td>
+					<td>
+						<select name="training">
+							<option value="JS">JavaScript</option>
+							<option value="Java">Java</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Send the information at</b></td>
+					<td><a href="mailto:empinfo@capgemini.com">empinfo@capgemini.com</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
