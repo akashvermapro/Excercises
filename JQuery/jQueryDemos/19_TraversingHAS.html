@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Selecting Elements that Contain Specific Child Elements in jQuery</title>
+<style>
+    .highlight{
+        background: yellow;
+    }        
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("ul li").has("ul").addClass("highlight");
+});
+</script>
+</head>
+<body>
+    <ul>
+        <li>Section 1</li>
+        <li>Section 2</li>
+        <li>
+            <ul>
+                <li>Section 2.1</li>
+                <li>Section 2.2</li>
+                <li>Section 2.3</li>
+            </ul>
+        </li>
+        <li>Section 4</li>
+    </ul>
+</body>
+</html>                            
