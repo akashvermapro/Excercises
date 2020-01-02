@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+
+ </HEAD>
+
+ <BODY>
+  <form name=first>
+  <input type=button  name=myButton value="Display Name" onclick="display()"><br>
+  Enter First Name<input type=text name=fname><br>
+  </form>
+  <form name=second>
+  Enter Last Name<input type=text name=lname>
+  </form>
+
+  <script>
+  
+function display()
+{
+	document.first.fname.value="Uttam";
+	document.second.lname.value="Patel";
+}
+//document.first.myButton.onclick=display();
+  </script>
+ </BODY>
+</HTML>

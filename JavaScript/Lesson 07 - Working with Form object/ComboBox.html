@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+	function display()
+	{
+		var combo=document.getElementById("country").value;
+		var index=document.getElementById("country").selectedIndex;
+		alert("Your Selected : "+index+" . "+combo+"   Country");
+	}
+</script>
+</head>
+<body>
+<form>
+<select id=country onchange="display()">
+	<option selected value="INDIA">INDIA</option>
+	<option value="Canada">Canada</option>
+	<option value="UAE" >UAE</option>
+	<option value="UK">UK</option>
+	<option value="China">China</option>
+</select>
+</form>
+</body>
+</html>
